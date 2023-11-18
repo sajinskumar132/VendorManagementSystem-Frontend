@@ -38,7 +38,6 @@ function BillTable() {
         BillServiceClass.GetBills()
         .then((response) => {
           dispatch(UpdateBills(response!.data));
-          console.log(response);
         })
         .catch((error: any) => {
           console.log(error);

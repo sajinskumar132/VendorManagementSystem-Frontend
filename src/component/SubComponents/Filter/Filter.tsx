@@ -12,7 +12,7 @@ function Filter() {
         SetDetails(Services.GetDetailsLocatlStorage())
     },[UpdateState])
   return (
-    <div style={{float:'right','marginBottom':'8px'}}>
+    <div style={{'marginBottom':'8px'}} >
         {Details? <BillCreateDrawer/>:<></>}
     </div>
   )

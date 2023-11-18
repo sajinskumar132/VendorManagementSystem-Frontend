@@ -26,13 +26,11 @@ function BillCreateDrawer() {
         }).finally(() => {
             SetLoading(false)
         })
-        console.log(values)
     }
 
     return (
-        <div>
-            <>
-                <Button type="primary" onClick={showDrawer}>
+        <div style={{'cursor':"pointer"}}>
+                <Button type="primary"  onClick={showDrawer}>
                     Create
                 </Button>
                 <Drawer title="Create a New Bill" placement="right" onClose={onClose} open={open}>
@@ -72,7 +70,6 @@ function BillCreateDrawer() {
                         </Form.Item>
                     </Form>
                 </Drawer>
-            </>
         </div>
     )
 }

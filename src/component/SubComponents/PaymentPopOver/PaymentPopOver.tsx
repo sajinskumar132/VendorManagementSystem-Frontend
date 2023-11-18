@@ -29,7 +29,6 @@ function PaymentPopOver({ id, balanceAmount }: { id: string, balanceAmount: numb
         setIsModalOpen(false);
     };
     const onChange = (value: number) => {
-        console.log(value)
         Setamount(value)
     };
 
