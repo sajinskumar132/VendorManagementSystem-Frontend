@@ -101,7 +101,7 @@ function BillTable() {
       key: 'paidPercentage',
       render: (_,{paidPercentage}) => (
         <>
-         <Progress type="circle" percent={paidPercentage} size={50} />
+         <Progress type="circle" percent={Math.round(paidPercentage)} size={50} />
         </>
       ),
     },
